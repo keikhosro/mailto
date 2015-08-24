@@ -1,0 +1,10 @@
+{
+    "appDesc": {
+        "description": "App description.",
+        "message": "Send the current page using the default mail client"
+    },
+    "appName": {
+        "description": "App name.",
+        "message": "mailto"
+    }
+}
