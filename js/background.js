@@ -6,17 +6,20 @@ function mailto(tab) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    chrome.browserAction.onClicked.addListener(function(tab) {
-        mailto(tab);
-    });
+chrome.action.onClicked.addListener(function(tab) {
+    mailto(tab);
+});
 
-    chrome.contextMenus.removeAll();
+chrome.runtime.onInstalled.addListener(() => {
     chrome.contextMenus.create({
+        'id': 'mailto',
         'title': chrome.i18n.getMessage('appName'),
-        'contexts': ['all'],
-        'onclick': function(info, tab) {
-            mailto(tab);
-        }
+        'contexts': ['all']
     });
+});
+
+chrome.contextMenus.onClicked.addListener((info, tab) => {
+    if (info.menuItemId === 'mailto') {
+        mailto(tab);
+    }
 });
