@@ -21,19 +21,26 @@ chrome.action.onClicked.addListener(function (tab) {
 });
 
 chrome.runtime.onInstalled.addListener(() => {
-    chrome.contextMenus.removeAll(() => {
-        // Base mailto without default recipient
-        chrome.contextMenus.create({
-            'id': 'mailto-blank',
-            'title': chrome.i18n.getMessage('appName'),
-            type: 'normal',
-            'contexts': ['page', 'frame', 'selection', 'link', 'editable', 'image', 'video', 'audio']
-        });
+    updateContextMenus();
+});
 
-        // Check if default emails are configured
-        chrome.storage.sync.get(['defaultEmails'], function (result) {
-            const defaultEmails = result.defaultEmails || '';
-            if (!isEmpty(defaultEmails)) {
+// Update context menus based on settings
+function updateContextMenus() {
+    chrome.storage.sync.get(['defaultEmails', 'defaultBehavior'], function (result) {
+        const defaultEmails = result.defaultEmails || '';
+        const hasDefaultEmails = !isEmpty(defaultEmails);
+
+        chrome.contextMenus.removeAll(() => {
+            // Base mailto without default recipient
+            chrome.contextMenus.create({
+                'id': 'mailto-blank',
+                'title': chrome.i18n.getMessage('appName'),
+                type: 'normal',
+                'contexts': ['page', 'frame', 'selection', 'link', 'editable', 'image', 'video', 'audio']
+            });
+
+            // Check if default emails are configured
+            if (hasDefaultEmails) {
                 chrome.contextMenus.create({
                     'id': 'mailto-to-default',
                     'title': `${chrome.i18n.getMessage('appName')} ${chrome.i18n.getMessage('toDefaultRecipient')}`,
@@ -43,7 +50,7 @@ chrome.runtime.onInstalled.addListener(() => {
             }
         });
     });
-});
+}
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
     if (info.menuItemId === 'mailto-blank') {
