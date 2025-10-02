@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "기본 메일 클라이언트를 사용하여 현재 페이지 보내기"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(기본 수신자에게)"
+  },
+  "optionsTitle": {
+    "message": "이메일 링크 설정"
+  },
+  "defaultEmailsLabel": {
+    "message": "기본 이메일 주소 (선택사항):"
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "email@example.com, another@example.com"
+  },
+  "defaultEmailsHelp": {
+    "message": "쉼표로 구분하여 하나 이상의 이메일 주소를 입력하세요. 기본 수신자가 없으면 비워 두세요."
+  },
+  "defaultBehaviorLabel": {
+    "message": "확장 프로그램 버튼 기본 동작:"
+  },
+  "defaultBehaviorBlank": {
+    "message": "기본 수신자 없이 이메일"
+  },
+  "defaultBehaviorDefault": {
+    "message": "기본 수신자에게 이메일"
+  },
+  "defaultBehaviorHelp": {
+    "message": "확장 프로그램 버튼을 클릭할 때 발생하는 작업을 선택하세요. 다른 옵션은 컨텍스트 메뉴에서 사용할 수 있습니다."
+  },
+  "saveButton": {
+    "message": "저장"
+  },
+  "settingsSaved": {
+    "message": "설정이 저장되었습니다!"
+  },
+  "invalidEmails": {
+    "message": "유효하지 않은 이메일 주소:"
+  }
+}

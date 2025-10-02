@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "Kirim halaman saat ini menggunakan klien email default"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(ke penerima default)"
+  },
+  "optionsTitle": {
+    "message": "Pengaturan Tautan Email"
+  },
+  "defaultEmailsLabel": {
+    "message": "Alamat Email Default (opsional):"
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "email@contoh.com, lainnya@contoh.com"
+  },
+  "defaultEmailsHelp": {
+    "message": "Masukkan satu atau lebih alamat email yang dipisahkan dengan koma. Biarkan kosong untuk tidak ada penerima default."
+  },
+  "defaultBehaviorLabel": {
+    "message": "Perilaku Default Tombol Ekstensi:"
+  },
+  "defaultBehaviorBlank": {
+    "message": "Email tanpa penerima default"
+  },
+  "defaultBehaviorDefault": {
+    "message": "Email ke penerima default"
+  },
+  "defaultBehaviorHelp": {
+    "message": "Pilih apa yang terjadi saat Anda mengklik tombol ekstensi. Opsi lainnya akan tersedia di menu konteks."
+  },
+  "saveButton": {
+    "message": "Simpan"
+  },
+  "settingsSaved": {
+    "message": "Pengaturan tersimpan!"
+  },
+  "invalidEmails": {
+    "message": "Alamat email tidak valid:"
+  }
+}

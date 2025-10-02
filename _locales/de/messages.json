@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "Aktuelle Seite mit dem Standard-E-Mail-Client senden"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(an Standardempfänger)"
+  },
+  "optionsTitle": {
+    "message": "E-Mail-Link-Einstellungen"
+  },
+  "defaultEmailsLabel": {
+    "message": "Standard-E-Mail-Adressen (optional):"
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "email@beispiel.de, andere@beispiel.de"
+  },
+  "defaultEmailsHelp": {
+    "message": "Geben Sie eine oder mehrere E-Mail-Adressen durch Kommas getrennt ein. Leer lassen für keinen Standardempfänger."
+  },
+  "defaultBehaviorLabel": {
+    "message": "Standard-Schaltflächenverhalten:"
+  },
+  "defaultBehaviorBlank": {
+    "message": "E-Mail ohne Standardempfänger"
+  },
+  "defaultBehaviorDefault": {
+    "message": "E-Mail an Standardempfänger"
+  },
+  "defaultBehaviorHelp": {
+    "message": "Wählen Sie aus, was beim Klicken auf die Erweiterungsschaltfläche geschieht. Die andere Option ist im Kontextmenü verfügbar."
+  },
+  "saveButton": {
+    "message": "Speichern"
+  },
+  "settingsSaved": {
+    "message": "Einstellungen gespeichert!"
+  },
+  "invalidEmails": {
+    "message": "Ungültige E-Mail-Adresse(n):"
+  }
+}

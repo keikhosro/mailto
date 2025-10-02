@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title data-i18n="optionsTitle">Email Link Settings</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            padding: 0;
+            margin: 0;
+            max-width: 100%;
+        }
+
+        .header {
+            background-color: #1D6CA2;
+            color: white;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .header-logo {
+            width: 32px;
+            height: 32px;
+        }
+
+        .header-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .close-button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 4px 8px;
+            line-height: 1;
+            opacity: 0.9;
+            transition: opacity 0.2s;
+        }
+
+        .close-button:hover {
+            opacity: 1;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+
+        .content {
+            padding: 24px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+            background-color: white;
+        }
+
+        button#save {
+            margin-top: 16px;
+            padding: 10px 20px;
+            background-color: #3598DB;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button#save:hover {
+            background-color: #1D6CA2;
+        }
+
+        .status {
+            margin-top: 12px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .help-text {
+            font-size: 12px;
+            color: #666;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="header-left">
+        <img src="images/icon_128.png" alt="mailto icon" class="header-logo">
+        <h1 class="header-title" data-i18n="appName">mailto</h1>
+    </div>
+    <button class="close-button" id="closeButton" title="Close">&times;</button>
+</div>
+
+<div class="content">
+    <h2 data-i18n="optionsTitle">Email Link Settings</h2>
+
+    <label for="defaultEmails" data-i18n="defaultEmailsLabel">Default Email Addresses (optional):</label>
+    <input type="text" id="defaultEmails" data-i18n-placeholder="defaultEmailsPlaceholder">
+    <div class="help-text" data-i18n="defaultEmailsHelp">Enter one or more email addresses separated by commas. Leave
+        blank for no default recipient.
+    </div>
+
+    <label for="defaultBehavior" style="margin-top: 20px;" data-i18n="defaultBehaviorLabel">Extension Button Default
+        Behavior:</label>
+    <select id="defaultBehavior">
+        <option value="blank" data-i18n="defaultBehaviorBlank">Email without default recipient</option>
+        <option value="default" data-i18n="defaultBehaviorDefault">Email to default recipient</option>
+    </select>
+    <div class="help-text" data-i18n="defaultBehaviorHelp">Choose what happens when you click the extension button. The
+        other option will be available in the context menu.
+    </div>
+
+    <button id="save" data-i18n="saveButton">Save</button>
+    <div id="status" class="status"></div>
+</div>
+
+<script src="js/options.js"></script>
+</body>
+</html>

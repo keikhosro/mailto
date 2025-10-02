@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "Wyślij bieżącą stronę przy użyciu domyślnego klienta poczty"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(do domyślnego odbiorcy)"
+  },
+  "optionsTitle": {
+    "message": "Ustawienia Linku Email"
+  },
+  "defaultEmailsLabel": {
+    "message": "Domyślne Adresy Email (opcjonalnie):"
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "email@przyklad.pl, inny@przyklad.pl"
+  },
+  "defaultEmailsHelp": {
+    "message": "Wprowadź jeden lub więcej adresów e-mail oddzielonych przecinkami. Pozostaw puste, aby nie było domyślnego odbiorcy."
+  },
+  "defaultBehaviorLabel": {
+    "message": "Domyślne Zachowanie Przycisku:"
+  },
+  "defaultBehaviorBlank": {
+    "message": "Email bez domyślnego odbiorcy"
+  },
+  "defaultBehaviorDefault": {
+    "message": "Email do domyślnego odbiorcy"
+  },
+  "defaultBehaviorHelp": {
+    "message": "Wybierz, co się dzieje po kliknięciu przycisku rozszerzenia. Druga opcja będzie dostępna w menu kontekstowym."
+  },
+  "saveButton": {
+    "message": "Zapisz"
+  },
+  "settingsSaved": {
+    "message": "Ustawienia zapisane!"
+  },
+  "invalidEmails": {
+    "message": "Nieprawidłowy adres(y) e-mail:"
+  }
+}

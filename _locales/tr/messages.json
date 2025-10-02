@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "Varsayılan posta istemcisini kullanarak geçerli sayfayı gönderin"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(varsayılan alıcıya)"
+  },
+  "optionsTitle": {
+    "message": "E-posta Bağlantısı Ayarları"
+  },
+  "defaultEmailsLabel": {
+    "message": "Varsayılan E-posta Adresleri (isteğe bağlı):"
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "email@ornek.com, diger@ornek.com"
+  },
+  "defaultEmailsHelp": {
+    "message": "Virgülle ayrılmış bir veya daha fazla e-posta adresi girin. Varsayılan alıcı olmaması için boş bırakın."
+  },
+  "defaultBehaviorLabel": {
+    "message": "Uzantı Düğmesi Varsayılan Davranışı:"
+  },
+  "defaultBehaviorBlank": {
+    "message": "Varsayılan alıcı olmadan e-posta"
+  },
+  "defaultBehaviorDefault": {
+    "message": "Varsayılan alıcıya e-posta"
+  },
+  "defaultBehaviorHelp": {
+    "message": "Uzantı düğmesine tıkladığınızda ne olacağını seçin. Diğer seçenek bağlam menüsünde kullanılabilir olacaktır."
+  },
+  "saveButton": {
+    "message": "Kaydet"
+  },
+  "settingsSaved": {
+    "message": "Ayarlar kaydedildi!"
+  },
+  "invalidEmails": {
+    "message": "Geçersiz e-posta adresi:"
+  }
+}

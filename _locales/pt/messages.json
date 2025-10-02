@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "Enviar a página atual usando o cliente de email padrão"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(para destinatário padrão)"
+  },
+  "optionsTitle": {
+    "message": "Configurações de Link de Email"
+  },
+  "defaultEmailsLabel": {
+    "message": "Endereços de Email Padrão (opcional):"
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "email@exemplo.com, outro@exemplo.com"
+  },
+  "defaultEmailsHelp": {
+    "message": "Digite um ou mais endereços de email separados por vírgulas. Deixe em branco para nenhum destinatário padrão."
+  },
+  "defaultBehaviorLabel": {
+    "message": "Comportamento Padrão do Botão:"
+  },
+  "defaultBehaviorBlank": {
+    "message": "Email sem destinatário padrão"
+  },
+  "defaultBehaviorDefault": {
+    "message": "Email para destinatário padrão"
+  },
+  "defaultBehaviorHelp": {
+    "message": "Escolha o que acontece ao clicar no botão da extensão. A outra opção estará disponível no menu de contexto."
+  },
+  "saveButton": {
+    "message": "Salvar"
+  },
+  "settingsSaved": {
+    "message": "Configurações salvas!"
+  },
+  "invalidEmails": {
+    "message": "Endereço(s) de email inválido(s):"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "Skicka den aktuella sidan med standardmejlklienten"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(till standardmottagare)"
+  },
+  "optionsTitle": {
+    "message": "Inställningar för E-postlänk"
+  },
+  "defaultEmailsLabel": {
+    "message": "Standard E-postadresser (valfritt):"
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "email@exempel.se, annat@exempel.se"
+  },
+  "defaultEmailsHelp": {
+    "message": "Ange en eller flera e-postadresser separerade med kommatecken. Lämna tomt för ingen standardmottagare."
+  },
+  "defaultBehaviorLabel": {
+    "message": "Standardbeteende för Tilläggsknapp:"
+  },
+  "defaultBehaviorBlank": {
+    "message": "E-post utan standardmottagare"
+  },
+  "defaultBehaviorDefault": {
+    "message": "E-post till standardmottagare"
+  },
+  "defaultBehaviorHelp": {
+    "message": "Välj vad som händer när du klickar på tilläggsknappen. Det andra alternativet kommer att vara tillgängligt i snabbmenyn."
+  },
+  "saveButton": {
+    "message": "Spara"
+  },
+  "settingsSaved": {
+    "message": "Inställningar sparade!"
+  },
+  "invalidEmails": {
+    "message": "Ogiltig(a) e-postadress(er):"
+  }
+}

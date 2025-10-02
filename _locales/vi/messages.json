@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "Gửi trang hiện tại bằng ứng dụng thư mặc định"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(đến người nhận mặc định)"
+  },
+  "optionsTitle": {
+    "message": "Cài Đặt Liên Kết Email"
+  },
+  "defaultEmailsLabel": {
+    "message": "Địa Chỉ Email Mặc Định (tùy chọn):"
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "email@example.com, another@example.com"
+  },
+  "defaultEmailsHelp": {
+    "message": "Nhập một hoặc nhiều địa chỉ email cách nhau bằng dấu phẩy. Để trống nếu không có người nhận mặc định."
+  },
+  "defaultBehaviorLabel": {
+    "message": "Hành Vi Mặc Định Của Nút Tiện Ích:"
+  },
+  "defaultBehaviorBlank": {
+    "message": "Email không có người nhận mặc định"
+  },
+  "defaultBehaviorDefault": {
+    "message": "Email đến người nhận mặc định"
+  },
+  "defaultBehaviorHelp": {
+    "message": "Chọn điều gì xảy ra khi bạn nhấp vào nút tiện ích. Tùy chọn còn lại sẽ có trong menu ngữ cảnh."
+  },
+  "saveButton": {
+    "message": "Lưu"
+  },
+  "settingsSaved": {
+    "message": "Đã lưu cài đặt!"
+  },
+  "invalidEmails": {
+    "message": "Địa chỉ email không hợp lệ:"
+  }
+}

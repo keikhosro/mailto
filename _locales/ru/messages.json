@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "Отправить текущую страницу с помощью почтового клиента по умолчанию"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(получателю по умолчанию)"
+  },
+  "optionsTitle": {
+    "message": "Настройки Ссылки Email"
+  },
+  "defaultEmailsLabel": {
+    "message": "Адреса Email по умолчанию (необязательно):"
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "email@example.com, another@example.com"
+  },
+  "defaultEmailsHelp": {
+    "message": "Введите один или несколько адресов электронной почты через запятую. Оставьте пустым, если получатель по умолчанию не нужен."
+  },
+  "defaultBehaviorLabel": {
+    "message": "Поведение кнопки расширения по умолчанию:"
+  },
+  "defaultBehaviorBlank": {
+    "message": "Email без получателя по умолчанию"
+  },
+  "defaultBehaviorDefault": {
+    "message": "Email получателю по умолчанию"
+  },
+  "defaultBehaviorHelp": {
+    "message": "Выберите, что происходит при нажатии кнопки расширения. Другой вариант будет доступен в контекстном меню."
+  },
+  "saveButton": {
+    "message": "Сохранить"
+  },
+  "settingsSaved": {
+    "message": "Настройки сохранены!"
+  },
+  "invalidEmails": {
+    "message": "Неверный адрес(а) электронной почты:"
+  }
+}

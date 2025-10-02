@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "使用默认邮件客户端发送当前页面"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(发送给默认收件人)"
+  },
+  "optionsTitle": {
+    "message": "邮件链接设置"
+  },
+  "defaultEmailsLabel": {
+    "message": "默认电子邮件地址（可选）："
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "email@example.com, another@example.com"
+  },
+  "defaultEmailsHelp": {
+    "message": "输入一个或多个用逗号分隔的电子邮件地址。留空表示没有默认收件人。"
+  },
+  "defaultBehaviorLabel": {
+    "message": "扩展按钮默认行为："
+  },
+  "defaultBehaviorBlank": {
+    "message": "无默认收件人的邮件"
+  },
+  "defaultBehaviorDefault": {
+    "message": "发送给默认收件人"
+  },
+  "defaultBehaviorHelp": {
+    "message": "选择单击扩展按钮时发生的操作。另一个选项将在右键菜单中可用。"
+  },
+  "saveButton": {
+    "message": "保存"
+  },
+  "settingsSaved": {
+    "message": "设置已保存！"
+  },
+  "invalidEmails": {
+    "message": "无效的电子邮件地址："
+  }
+}
