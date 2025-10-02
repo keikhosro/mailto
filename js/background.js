@@ -59,3 +59,10 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         updateContextMenus();
     }
 });
+
+// Listen for storage changes to update menus automatically
+chrome.storage.onChanged.addListener((changes, namespace) => {
+    if (namespace === 'sync' && (changes.defaultEmails || changes.defaultBehavior)) {
+        updateContextMenus();
+    }
+});
