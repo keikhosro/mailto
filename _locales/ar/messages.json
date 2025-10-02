@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "إرسال الصفحة الحالية باستخدام عميل البريد الافتراضي"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(إلى المستلم الافتراضي)"
+  },
+  "optionsTitle": {
+    "message": "إعدادات رابط البريد الإلكتروني"
+  },
+  "defaultEmailsLabel": {
+    "message": "عناوين البريد الإلكتروني الافتراضية (اختياري):"
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "email@example.com, another@example.com"
+  },
+  "defaultEmailsHelp": {
+    "message": "أدخل عنوان بريد إلكتروني واحد أو أكثر مفصولة بفواصل. اتركه فارغاً لعدم وجود مستلم افتراضي."
+  },
+  "defaultBehaviorLabel": {
+    "message": "السلوك الافتراضي لزر الإضافة:"
+  },
+  "defaultBehaviorBlank": {
+    "message": "بريد إلكتروني بدون مستلم افتراضي"
+  },
+  "defaultBehaviorDefault": {
+    "message": "بريد إلكتروني إلى المستلم الافتراضي"
+  },
+  "defaultBehaviorHelp": {
+    "message": "اختر ما يحدث عند النقر على زر الإضافة. سيكون الخيار الآخر متاحاً في قائمة السياق."
+  },
+  "saveButton": {
+    "message": "حفظ"
+  },
+  "settingsSaved": {
+    "message": "تم حفظ الإعدادات!"
+  },
+  "invalidEmails": {
+    "message": "عنوان (عناوين) بريد إلكتروني غير صالح:"
+  }
+}

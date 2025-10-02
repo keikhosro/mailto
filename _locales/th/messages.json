@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "ส่งหน้าปัจจุบันโดยใช้โปรแกรมอีเมลเริ่มต้น"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(ถึงผู้รับเริ่มต้น)"
+  },
+  "optionsTitle": {
+    "message": "การตั้งค่าลิงก์อีเมล"
+  },
+  "defaultEmailsLabel": {
+    "message": "ที่อยู่อีเมลเริ่มต้น (ไม่บังคับ):"
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "email@example.com, another@example.com"
+  },
+  "defaultEmailsHelp": {
+    "message": "ป้อนที่อยู่อีเมลหนึ่งรายการหรือมากกว่า คั่นด้วยเครื่องหมายจุลภาค เว้นว่างไว้หากไม่มีผู้รับเริ่มต้น"
+  },
+  "defaultBehaviorLabel": {
+    "message": "พฤติกรรมเริ่มต้นของปุ่มส่วนขยาย:"
+  },
+  "defaultBehaviorBlank": {
+    "message": "อีเมลโดยไม่มีผู้รับเริ่มต้น"
+  },
+  "defaultBehaviorDefault": {
+    "message": "อีเมลถึงผู้รับเริ่มต้น"
+  },
+  "defaultBehaviorHelp": {
+    "message": "เลือกสิ่งที่เกิดขึ้นเมื่อคุณคลิกปุ่มส่วนขยาย ตัวเลือกอื่นจะพร้อมใช้งานในเมนูบริบท"
+  },
+  "saveButton": {
+    "message": "บันทึก"
+  },
+  "settingsSaved": {
+    "message": "บันทึกการตั้งค่าแล้ว!"
+  },
+  "invalidEmails": {
+    "message": "ที่อยู่อีเมลไม่ถูกต้อง:"
+  }
+}

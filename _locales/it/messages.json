@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "Inviare la pagina corrente utilizzando il client di posta predefinito"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(al destinatario predefinito)"
+  },
+  "optionsTitle": {
+    "message": "Impostazioni Link Email"
+  },
+  "defaultEmailsLabel": {
+    "message": "Indirizzi Email Predefiniti (opzionale):"
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "email@esempio.com, altro@esempio.com"
+  },
+  "defaultEmailsHelp": {
+    "message": "Inserisci uno o più indirizzi email separati da virgole. Lascia vuoto per nessun destinatario predefinito."
+  },
+  "defaultBehaviorLabel": {
+    "message": "Comportamento Predefinito del Pulsante:"
+  },
+  "defaultBehaviorBlank": {
+    "message": "Email senza destinatario predefinito"
+  },
+  "defaultBehaviorDefault": {
+    "message": "Email al destinatario predefinito"
+  },
+  "defaultBehaviorHelp": {
+    "message": "Scegli cosa succede quando fai clic sul pulsante dell'estensione. L'altra opzione sarà disponibile nel menu contestuale."
+  },
+  "saveButton": {
+    "message": "Salva"
+  },
+  "settingsSaved": {
+    "message": "Impostazioni salvate!"
+  },
+  "invalidEmails": {
+    "message": "Indirizzo/i email non valido/i:"
+  }
+}

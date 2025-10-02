@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "Enviar la página actual usando el cliente de correo predeterminado"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(al destinatario predeterminado)"
+  },
+  "optionsTitle": {
+    "message": "Configuración de Enlace de Correo"
+  },
+  "defaultEmailsLabel": {
+    "message": "Direcciones de Correo Predeterminadas (opcional):"
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "correo@ejemplo.com, otro@ejemplo.com"
+  },
+  "defaultEmailsHelp": {
+    "message": "Ingrese una o más direcciones de correo separadas por comas. Deje en blanco si no desea destinatario predeterminado."
+  },
+  "defaultBehaviorLabel": {
+    "message": "Comportamiento Predeterminado del Botón:"
+  },
+  "defaultBehaviorBlank": {
+    "message": "Correo sin destinatario predeterminado"
+  },
+  "defaultBehaviorDefault": {
+    "message": "Correo al destinatario predeterminado"
+  },
+  "defaultBehaviorHelp": {
+    "message": "Elija qué sucede al hacer clic en el botón de la extensión. La otra opción estará disponible en el menú contextual."
+  },
+  "saveButton": {
+    "message": "Guardar"
+  },
+  "settingsSaved": {
+    "message": "¡Configuración guardada!"
+  },
+  "invalidEmails": {
+    "message": "Dirección(es) de correo inválida(s):"
+  }
+}

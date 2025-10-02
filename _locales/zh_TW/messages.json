@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "使用預設郵件用戶端傳送目前頁面"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(傳送給預設收件者)"
+  },
+  "optionsTitle": {
+    "message": "郵件連結設定"
+  },
+  "defaultEmailsLabel": {
+    "message": "預設電子郵件地址（選填）："
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "email@example.com, another@example.com"
+  },
+  "defaultEmailsHelp": {
+    "message": "輸入一個或多個以逗號分隔的電子郵件地址。留空表示沒有預設收件者。"
+  },
+  "defaultBehaviorLabel": {
+    "message": "擴充功能按鈕預設行為："
+  },
+  "defaultBehaviorBlank": {
+    "message": "無預設收件者的郵件"
+  },
+  "defaultBehaviorDefault": {
+    "message": "傳送給預設收件者"
+  },
+  "defaultBehaviorHelp": {
+    "message": "選擇點擊擴充功能按鈕時發生的動作。另一個選項將在右鍵選單中可用。"
+  },
+  "saveButton": {
+    "message": "儲存"
+  },
+  "settingsSaved": {
+    "message": "設定已儲存！"
+  },
+  "invalidEmails": {
+    "message": "無效的電子郵件地址："
+  }
+}

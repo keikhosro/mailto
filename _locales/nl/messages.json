@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "Verstuur de huidige pagina met de standaard e-mailclient"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(naar standaard ontvanger)"
+  },
+  "optionsTitle": {
+    "message": "E-mail Link Instellingen"
+  },
+  "defaultEmailsLabel": {
+    "message": "Standaard E-mailadressen (optioneel):"
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "email@voorbeeld.nl, ander@voorbeeld.nl"
+  },
+  "defaultEmailsHelp": {
+    "message": "Voer een of meer e-mailadressen in, gescheiden door komma's. Laat leeg voor geen standaard ontvanger."
+  },
+  "defaultBehaviorLabel": {
+    "message": "Standaard Knopgedrag:"
+  },
+  "defaultBehaviorBlank": {
+    "message": "E-mail zonder standaard ontvanger"
+  },
+  "defaultBehaviorDefault": {
+    "message": "E-mail naar standaard ontvanger"
+  },
+  "defaultBehaviorHelp": {
+    "message": "Kies wat er gebeurt wanneer u op de extensieknop klikt. De andere optie is beschikbaar in het contextmenu."
+  },
+  "saveButton": {
+    "message": "Opslaan"
+  },
+  "settingsSaved": {
+    "message": "Instellingen opgeslagen!"
+  },
+  "invalidEmails": {
+    "message": "Ongeldig(e) e-mailadres(sen):"
+  }
+}

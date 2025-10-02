@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "デフォルトのメールクライアントを使用して現在のページを送信"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(デフォルトの受信者へ)"
+  },
+  "optionsTitle": {
+    "message": "メールリンク設定"
+  },
+  "defaultEmailsLabel": {
+    "message": "デフォルトのメールアドレス（オプション）："
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "email@example.com, another@example.com"
+  },
+  "defaultEmailsHelp": {
+    "message": "カンマで区切って1つ以上のメールアドレスを入力してください。デフォルトの受信者がない場合は空白のままにしてください。"
+  },
+  "defaultBehaviorLabel": {
+    "message": "拡張機能ボタンのデフォルト動作："
+  },
+  "defaultBehaviorBlank": {
+    "message": "デフォルトの受信者なしでメール"
+  },
+  "defaultBehaviorDefault": {
+    "message": "デフォルトの受信者にメール"
+  },
+  "defaultBehaviorHelp": {
+    "message": "拡張機能ボタンをクリックしたときの動作を選択してください。もう一方のオプションはコンテキストメニューで利用できます。"
+  },
+  "saveButton": {
+    "message": "保存"
+  },
+  "settingsSaved": {
+    "message": "設定を保存しました！"
+  },
+  "invalidEmails": {
+    "message": "無効なメールアドレス："
+  }
+}

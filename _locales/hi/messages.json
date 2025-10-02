@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "डिफ़ॉल्ट मेल क्लाइंट का उपयोग करके वर्तमान पेज भेजें"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(डिफ़ॉल्ट प्राप्तकर्ता को)"
+  },
+  "optionsTitle": {
+    "message": "ईमेल लिंक सेटिंग्स"
+  },
+  "defaultEmailsLabel": {
+    "message": "डिफ़ॉल्ट ईमेल पते (वैकल्पिक):"
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "email@example.com, another@example.com"
+  },
+  "defaultEmailsHelp": {
+    "message": "अल्पविराम द्वारा अलग किए गए एक या अधिक ईमेल पते दर्ज करें। कोई डिफ़ॉल्ट प्राप्तकर्ता नहीं के लिए खाली छोड़ दें।"
+  },
+  "defaultBehaviorLabel": {
+    "message": "एक्सटेंशन बटन डिफ़ॉल्ट व्यवहार:"
+  },
+  "defaultBehaviorBlank": {
+    "message": "डिफ़ॉल्ट प्राप्तकर्ता के बिना ईमेल"
+  },
+  "defaultBehaviorDefault": {
+    "message": "डिफ़ॉल्ट प्राप्तकर्ता को ईमेल"
+  },
+  "defaultBehaviorHelp": {
+    "message": "चुनें कि एक्सटेंशन बटन पर क्लिक करने पर क्या होता है। दूसरा विकल्प संदर्भ मेनू में उपलब्ध होगा।"
+  },
+  "saveButton": {
+    "message": "सहेजें"
+  },
+  "settingsSaved": {
+    "message": "सेटिंग्स सहेजी गईं!"
+  },
+  "invalidEmails": {
+    "message": "अमान्य ईमेल पता:"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "appDesc": {
+    "description": "App description.",
+    "message": "ارسال صفحه فعلی با استفاده از کلاینت ایمیل پیش‌فرض"
+  },
+  "appName": {
+    "description": "App name.",
+    "message": "mailto"
+  },
+  "toDefaultRecipient": {
+    "message": "(به گیرنده پیش‌فرض)"
+  },
+  "optionsTitle": {
+    "message": "تنظیمات لینک ایمیل"
+  },
+  "defaultEmailsLabel": {
+    "message": "آدرس‌های ایمیل پیش‌فرض (اختیاری):"
+  },
+  "defaultEmailsPlaceholder": {
+    "message": "email@example.com, another@example.com"
+  },
+  "defaultEmailsHelp": {
+    "message": "یک یا چند آدرس ایمیل را با کاما از هم جدا کنید. برای عدم وجود گیرنده پیش‌فرض خالی بگذارید."
+  },
+  "defaultBehaviorLabel": {
+    "message": "رفتار پیش‌فرض دکمه افزونه:"
+  },
+  "defaultBehaviorBlank": {
+    "message": "ایمیل بدون گیرنده پیش‌فرض"
+  },
+  "defaultBehaviorDefault": {
+    "message": "ایمیل به گیرنده پیش‌فرض"
+  },
+  "defaultBehaviorHelp": {
+    "message": "انتخاب کنید هنگام کلیک روی دکمه افزونه چه اتفاقی می‌افتد. گزینه دیگر در منوی زمینه در دسترس خواهد بود."
+  },
+  "saveButton": {
+    "message": "ذخیره"
+  },
+  "settingsSaved": {
+    "message": "تنظیمات ذخیره شد!"
+  },
+  "invalidEmails": {
+    "message": "آدرس(های) ایمیل نامعتبر:"
+  }
+}
