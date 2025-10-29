@@ -42,5 +42,17 @@
   },
   "invalidEmails": {
     "message": "無效的電子郵件地址："
+  },
+  "defaultCCLabel": {
+    "message": "副本（選填）："
+  },
+  "defaultBCCLabel": {
+    "message": "密件副本（選填）："
+  },
+  "defaultSubjectLabel": {
+    "message": "預設主旨（選填）："
+  },
+  "defaultBodyLabel": {
+    "message": "預設內文（選填）："
   }
 }

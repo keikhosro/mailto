@@ -42,5 +42,17 @@
   },
   "invalidEmails": {
     "message": "無効なメールアドレス："
+  },
+  "defaultCCLabel": {
+    "message": "CC（オプション）："
+  },
+  "defaultBCCLabel": {
+    "message": "BCC（オプション）："
+  },
+  "defaultSubjectLabel": {
+    "message": "デフォルトの件名（オプション）："
+  },
+  "defaultBodyLabel": {
+    "message": "デフォルトの本文（オプション）："
   }
 }

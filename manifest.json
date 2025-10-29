@@ -1,33 +1,33 @@
 {
-    "manifest_version": 3,
-    "version": "1.0.0",
-    "default_locale": "en_US",
-    "name": "__MSG_appName__",
-    "description": "__MSG_appDesc__",
-    "homepage_url": "https://github.com/keikhosro/mailto",
-    "options_page": "options.html",
-    "background": {
-        "service_worker": "js/background.js"
-    },
-    "action": {
-        "default_icon": {
-            "16": "images/icon_16.png",
-            "19": "images/icon_19.png",
-            "32": "images/icon_32.png",
-            "38": "images/icon_38.png"
-        }
-    },
-    "icons": {
-        "16": "images/icon_16.png",
-        "19": "images/icon_19.png",
-        "38": "images/icon_38.png",
-        "32": "images/icon_32.png",
-        "48": "images/icon_48.png",
-        "128": "images/icon_128.png"
-    },
-    "permissions": [
-        "contextMenus",
-        "tabs",
-        "storage"
-    ]
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "default_locale": "en_US",
+  "name": "__MSG_appName__",
+  "description": "__MSG_appDesc__",
+  "homepage_url": "https://github.com/keikhosro/mailto",
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/icon_16.png",
+      "19": "images/icon_19.png",
+      "32": "images/icon_32.png",
+      "38": "images/icon_38.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon_16.png",
+    "19": "images/icon_19.png",
+    "38": "images/icon_38.png",
+    "32": "images/icon_32.png",
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "storage"
+  ]
 }

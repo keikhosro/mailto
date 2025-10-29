@@ -42,5 +42,17 @@
   },
   "invalidEmails": {
     "message": "无效的电子邮件地址："
+  },
+  "defaultCCLabel": {
+    "message": "抄送（可选）："
+  },
+  "defaultBCCLabel": {
+    "message": "密送（可选）："
+  },
+  "defaultSubjectLabel": {
+    "message": "默认主题（可选）："
+  },
+  "defaultBodyLabel": {
+    "message": "默认正文（可选）："
   }
 }

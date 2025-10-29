@@ -42,5 +42,17 @@
   },
   "invalidEmails": {
     "message": "Alamat email tidak valid:"
+  },
+  "defaultCCLabel": {
+    "message": "CC (opsional):"
+  },
+  "defaultBCCLabel": {
+    "message": "BCC (opsional):"
+  },
+  "defaultSubjectLabel": {
+    "message": "Subjek Default (opsional):"
+  },
+  "defaultBodyLabel": {
+    "message": "Isi Default (opsional):"
   }
 }

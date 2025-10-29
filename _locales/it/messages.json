@@ -42,5 +42,17 @@
   },
   "invalidEmails": {
     "message": "Indirizzo/i email non valido/i:"
+  },
+  "defaultCCLabel": {
+    "message": "CC (opzionale):"
+  },
+  "defaultBCCLabel": {
+    "message": "CCN (opzionale):"
+  },
+  "defaultSubjectLabel": {
+    "message": "Oggetto Predefinito (opzionale):"
+  },
+  "defaultBodyLabel": {
+    "message": "Corpo Predefinito (opzionale):"
   }
 }

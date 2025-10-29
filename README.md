@@ -5,7 +5,9 @@ A simple and elegant Chrome extension that allows you to quickly share web pages
 ## Features
 
 - 🚀 **One-click sharing** - Click the extension icon to instantly open your email client with the page URL
-- 📧 **Default recipients** - Set default email addresses for quick sharing
+- 📧 **Default recipients** - Set default email addresses (TO, CC, BCC) for quick sharing
+- 📝 **Customizable templates** - Create custom subject and body templates with tokens
+- 🔄 **Dynamic tokens** - Use `{PAGE_TITLE}` and `{PAGE_URL}` tokens that auto-replace with current page info
 - ⚙️ **Customizable behavior** - Choose whether the extension button uses default recipients or not
 - 🌍 **Multi-language support** - Available in 21 languages
 - 🎯 **Context menu integration** - Right-click anywhere to share via email
@@ -30,33 +32,105 @@ A simple and elegant Chrome extension that allows you to quickly share web pages
 
 ### Basic Usage
 1. Click the extension icon in your browser toolbar
-2. Your default email client will open with:
-    - Page URL in the email body
-    - Page title as the subject line
+2. Your default email client will open with the configured settings
 
-### Setting Default Recipients
+### Setting Up Email Templates
+
+#### Configuring Recipients
 1. Right-click the extension icon and select "Options"
-2. Enter one or more email addresses (comma-separated)
-3. Choose your preferred button behavior:
-    - **Email without default recipient** - Opens blank email
-    - **Email to default recipient** - Pre-fills your default recipients
-4. Click "Save"
+2. Configure your recipients:
+   - **TO** - Primary recipients (comma-separated)
+   - **CC** - Carbon copy recipients (comma-separated)
+   - **BCC** - Blind carbon copy recipients (comma-separated)
+
+#### Using Tokens in Subject and Body
+The extension supports two dynamic tokens that will be replaced with actual page information:
+
+- **{PAGE_TITLE}** - Replaced with the current page's title
+- **{PAGE_URL}** - Replaced with the current page's URL
+
+**Example Subject Templates:**
+```
+Check out: {PAGE_TITLE}
+Found this interesting: {PAGE_TITLE}
+{PAGE_TITLE} - Thought you might like this
+```
+
+**Example Body Templates:**
+```
+I found this page and thought of you:
+
+{PAGE_TITLE}
+{PAGE_URL}
+
+Let me know what you think!
+```
+
+```
+Take a look at this article: {PAGE_TITLE}
+
+Link: {PAGE_URL}
+```
+
+#### Inserting Tokens
+When editing the Subject or Body fields in the options page:
+1. Click the "Insert {PAGE_TITLE}" or "Insert {PAGE_URL}" buttons
+2. The token will be inserted at your cursor position
+3. You can manually type the tokens as well
+
+#### Default Behavior
+- If Subject is left blank, the page title will be used
+- If Body is left blank, only the page URL will be used
+- If no tokens are used, the text will be sent as-is
+
+### Button Behavior Options
+
+Choose what happens when you click the extension icon:
+1. **Email without default recipient** - Opens blank email with templates but no TO address
+2. **Email to default recipient** - Pre-fills all configured recipients and templates
+
+The other option remains available in the right-click context menu.
 
 ### Context Menu
 Right-click anywhere on a page to access the email sharing options from the context menu.
 
-## Configuration
+## Configuration Examples
 
-### Default Email Addresses
-You can configure default recipients in the extension options:
-- Enter multiple addresses separated by commas
-- Example: `john@example.com, jane@example.com`
-- Leave blank to always send without default recipients
+### Example 1: Simple Sharing
+```
+TO: team@company.com
+Subject: {PAGE_TITLE}
+Body: {PAGE_URL}
+```
+Result: Quick sharing with just title and URL
 
-### Button Behavior
-Choose what happens when you click the extension icon:
-- The selected option becomes the primary action
-- The other option remains available in the context menu
+### Example 2: Professional Sharing
+```
+TO: clients@company.com
+CC: manager@company.com
+Subject: Resource: {PAGE_TITLE}
+Body: Hi,
+
+I came across this resource that might be useful:
+
+Title: {PAGE_TITLE}
+Link: {PAGE_URL}
+
+Best regards
+```
+
+### Example 3: Personal Sharing
+```
+TO: friends@example.com
+Subject: Check this out!
+Body: Hey! Found something cool:
+
+{PAGE_TITLE}
+
+Check it out here: {PAGE_URL}
+
+Cheers!
+```
 
 ## Supported Languages
 
@@ -89,6 +163,13 @@ The extension automatically uses your browser's language setting.
 
 ### Building from Source
 No build process required - this extension uses vanilla JavaScript.
+
+### Token System
+The token replacement system works as follows:
+1. User configures subject/body with tokens in options
+2. Settings are saved to Chrome's sync storage
+3. When sharing, tokens are replaced with actual page data
+4. Mailto URL is constructed with encoded parameters
 
 ## Privacy
 

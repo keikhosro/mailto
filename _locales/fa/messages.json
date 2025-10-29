@@ -42,5 +42,17 @@
   },
   "invalidEmails": {
     "message": "آدرس(های) ایمیل نامعتبر:"
+  },
+  "defaultCCLabel": {
+    "message": "رونوشت (اختیاری):"
+  },
+  "defaultBCCLabel": {
+    "message": "رونوشت مخفی (اختیاری):"
+  },
+  "defaultSubjectLabel": {
+    "message": "موضوع پیش‌فرض (اختیاری):"
+  },
+  "defaultBodyLabel": {
+    "message": "متن پیش‌فرض (اختیاری):"
   }
 }

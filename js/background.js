@@ -2,12 +2,51 @@ function isEmpty(value) {
     return !value || value.trim().length === 0;
 }
 
+function replaceTokens(text, tab) {
+    if (!text) return '';
+    return text
+        .replace(/\{PAGE_TITLE\}/g, tab.title || '')
+        .replace(/\{PAGE_URL\}/g, tab.url || '');
+}
+
 function mailto(tab, includeDefault) {
     if (tab) {
-        // Get the default email addresses from storage
-        chrome.storage.sync.get(['defaultEmails'], function (result) {
+        // Get all settings from storage
+        chrome.storage.sync.get(['defaultEmails', 'defaultCC', 'defaultBCC', 'defaultSubject', 'defaultBody'], function (result) {
             const defaultEmails = result.defaultEmails || '';
-            const mailtoUrl = `mailto:${includeDefault && !isEmpty(defaultEmails) ? encodeURIComponent(defaultEmails) : ''}?body=${encodeURIComponent(tab.url)}&subject=${encodeURIComponent(tab.title)}`;
+            const defaultCC = result.defaultCC || '';
+            const defaultBCC = result.defaultBCC || '';
+            const defaultSubject = result.defaultSubject || '';
+            const defaultBody = result.defaultBody || '';
+
+            // Replace tokens in subject and body
+            const subject = replaceTokens(defaultSubject, tab) || tab.title;
+            const body = replaceTokens(defaultBody, tab) || tab.url;
+
+            // Build mailto URL
+            let mailtoUrl = 'mailto:';
+
+            // Add TO recipients if using defaults
+            if (includeDefault && !isEmpty(defaultEmails)) {
+                mailtoUrl += encodeURIComponent(defaultEmails);
+            }
+
+            // Build query parameters
+            const params = [];
+
+            if (includeDefault && !isEmpty(defaultCC)) {
+                params.push(`cc=${encodeURIComponent(defaultCC)}`);
+            }
+
+            if (includeDefault && !isEmpty(defaultBCC)) {
+                params.push(`bcc=${encodeURIComponent(defaultBCC)}`);
+            }
+
+            params.push(`subject=${encodeURIComponent(subject)}`);
+            params.push(`body=${encodeURIComponent(body)}`);
+
+            mailtoUrl += '?' + params.join('&');
+
             chrome.tabs.update(null, {url: mailtoUrl});
         });
     }

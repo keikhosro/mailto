@@ -1,46 +1,58 @@
 {
   "appDesc": {
     "description": "App description.",
-    "message": "Send the current page using the default mail client"
+    "message": "Envoyer la page actuelle en utilisant le client de messagerie par défaut"
   },
   "appName": {
     "description": "App name.",
     "message": "mailto"
   },
   "toDefaultRecipient": {
-    "message": "(to default recipient)"
+    "message": "(au destinataire par défaut)"
   },
   "optionsTitle": {
-    "message": "Email Link Settings"
+    "message": "Paramètres du Lien Email"
   },
   "defaultEmailsLabel": {
-    "message": "Default Email Addresses (optional):"
+    "message": "Adresses Email par Défaut (facultatif):"
   },
   "defaultEmailsPlaceholder": {
-    "message": "email@example.com, another@example.com"
+    "message": "email@exemple.com, autre@exemple.com"
   },
   "defaultEmailsHelp": {
-    "message": "Enter one or more email addresses separated by commas. Leave blank for no default recipient."
+    "message": "Entrez une ou plusieurs adresses email séparées par des virgules. Laissez vide pour aucun destinataire par défaut."
   },
   "defaultBehaviorLabel": {
-    "message": "Extension Button Default Behavior:"
+    "message": "Comportement par Défaut du Bouton:"
   },
   "defaultBehaviorBlank": {
-    "message": "Email without default recipient"
+    "message": "Email sans destinataire par défaut"
   },
   "defaultBehaviorDefault": {
-    "message": "Email to default recipient"
+    "message": "Email au destinataire par défaut"
   },
   "defaultBehaviorHelp": {
-    "message": "Choose what happens when you click the extension button. The other option will be available in the context menu."
+    "message": "Choisissez ce qui se passe lorsque vous cliquez sur le bouton de l'extension. L'autre option sera disponible dans le menu contextuel."
   },
   "saveButton": {
-    "message": "Save"
+    "message": "Enregistrer"
   },
   "settingsSaved": {
-    "message": "Settings saved!"
+    "message": "Paramètres enregistrés!"
   },
   "invalidEmails": {
-    "message": "Invalid email address(es):"
+    "message": "Adresse(s) email invalide(s):"
+  },
+  "defaultCCLabel": {
+    "message": "CC (facultatif):"
+  },
+  "defaultBCCLabel": {
+    "message": "CCI (facultatif):"
+  },
+  "defaultSubjectLabel": {
+    "message": "Objet par Défaut (facultatif):"
+  },
+  "defaultBodyLabel": {
+    "message": "Corps par Défaut (facultatif):"
   }
 }

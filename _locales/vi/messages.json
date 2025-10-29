@@ -42,5 +42,17 @@
   },
   "invalidEmails": {
     "message": "Địa chỉ email không hợp lệ:"
+  },
+  "defaultCCLabel": {
+    "message": "CC (tùy chọn):"
+  },
+  "defaultBCCLabel": {
+    "message": "BCC (tùy chọn):"
+  },
+  "defaultSubjectLabel": {
+    "message": "Tiêu Đề Mặc Định (tùy chọn):"
+  },
+  "defaultBodyLabel": {
+    "message": "Nội Dung Mặc Định (tùy chọn):"
   }
 }

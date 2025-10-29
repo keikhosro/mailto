@@ -42,5 +42,17 @@
   },
   "invalidEmails": {
     "message": "Неверный адрес(а) электронной почты:"
+  },
+  "defaultCCLabel": {
+    "message": "Копия (необязательно):"
+  },
+  "defaultBCCLabel": {
+    "message": "Скрытая копия (необязательно):"
+  },
+  "defaultSubjectLabel": {
+    "message": "Тема по умолчанию (необязательно):"
+  },
+  "defaultBodyLabel": {
+    "message": "Текст по умолчанию (необязательно):"
   }
 }

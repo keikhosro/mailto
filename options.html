@@ -58,8 +58,12 @@
 
         .content {
             padding: 24px;
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
         }
 
         label {
@@ -75,6 +79,18 @@
             border-radius: 4px;
             font-size: 14px;
             box-sizing: border-box;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+            resize: vertical;
+            min-height: 80px;
+            font-family: inherit;
         }
 
         select {
@@ -113,6 +129,43 @@
             color: #666;
             margin-top: 4px;
         }
+
+        .token-buttons {
+            display: flex;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .token-button {
+            padding: 6px 12px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background-color 0.2s;
+        }
+
+        .token-button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .token-info {
+            background-color: #f9f9f9;
+            border-left: 3px solid #3598DB;
+            padding: 12px;
+            margin-bottom: 20px;
+            font-size: 13px;
+        }
+
+        .token-info strong {
+            color: #1D6CA2;
+        }
+
+        .section-divider {
+            border-top: 1px solid #e0e0e0;
+            margin: 30px 0 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -127,20 +180,69 @@
 <div class="content">
     <h2 data-i18n="optionsTitle">Email Link Settings</h2>
 
-    <label for="defaultEmails" data-i18n="defaultEmailsLabel">Default Email Addresses (optional):</label>
-    <input type="text" id="defaultEmails" data-i18n-placeholder="defaultEmailsPlaceholder">
-    <div class="help-text" data-i18n="defaultEmailsHelp">Enter one or more email addresses separated by commas. Leave
-        blank for no default recipient.
+    <div class="token-info">
+        <strong>Available Tokens:</strong><br>
+        • <strong>{PAGE_TITLE}</strong> - Will be replaced with the page title<br>
+        • <strong>{PAGE_URL}</strong> - Will be replaced with the page URL
     </div>
 
-    <label for="defaultBehavior" style="margin-top: 20px;" data-i18n="defaultBehaviorLabel">Extension Button Default
-        Behavior:</label>
-    <select id="defaultBehavior">
-        <option value="blank" data-i18n="defaultBehaviorBlank">Email without default recipient</option>
-        <option value="default" data-i18n="defaultBehaviorDefault">Email to default recipient</option>
-    </select>
-    <div class="help-text" data-i18n="defaultBehaviorHelp">Choose what happens when you click the extension button. The
-        other option will be available in the context menu.
+    <div class="form-group">
+        <label for="defaultEmails" data-i18n="defaultEmailsLabel">Default Email Addresses (optional):</label>
+        <input type="text" id="defaultEmails" data-i18n-placeholder="defaultEmailsPlaceholder">
+        <div class="help-text" data-i18n="defaultEmailsHelp">Enter one or more email addresses separated by commas.
+            Leave blank for no default recipient.
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="defaultCC">CC (optional):</label>
+        <input type="text" id="defaultCC" placeholder="cc@example.com, another@example.com">
+        <div class="help-text">Enter one or more CC email addresses separated by commas.</div>
+    </div>
+
+    <div class="form-group">
+        <label for="defaultBCC">BCC (optional):</label>
+        <input type="text" id="defaultBCC" placeholder="bcc@example.com, another@example.com">
+        <div class="help-text">Enter one or more BCC email addresses separated by commas.</div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <div class="form-group">
+        <label for="defaultSubject">Default Subject (optional):</label>
+        <input type="text" id="defaultSubject" placeholder="Check out this page: {PAGE_TITLE}">
+        <div class="token-buttons">
+            <button class="token-button" id="insertTitleSubject">Insert {PAGE_TITLE}</button>
+            <button class="token-button" id="insertUrlSubject">Insert {PAGE_URL}</button>
+        </div>
+        <div class="help-text">Set a default subject line. Use tokens to include page information. If left blank, the
+            page title will be used.
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="defaultBody">Default Body (optional):</label>
+        <textarea id="defaultBody" placeholder="I thought you might find this interesting:&#10;&#10;{PAGE_TITLE}&#10;{PAGE_URL}"></textarea>
+        <div class="token-buttons">
+            <button class="token-button" id="insertTitleBody">Insert {PAGE_TITLE}</button>
+            <button class="token-button" id="insertUrlBody">Insert {PAGE_URL}</button>
+        </div>
+        <div class="help-text">Set a default email body. Use tokens to include page information. If left blank, only the
+            page URL will be used.
+        </div>
+    </div>
+
+    <div class="section-divider"></div>
+
+    <div class="form-group">
+        <label for="defaultBehavior" data-i18n="defaultBehaviorLabel">Extension Button Default Behavior:</label>
+        <select id="defaultBehavior">
+            <option value="blank" data-i18n="defaultBehaviorBlank">Email without default recipient</option>
+            <option value="default" data-i18n="defaultBehaviorDefault">Email to default recipient</option>
+        </select>
+        <div class="help-text" data-i18n="defaultBehaviorHelp">Choose what happens when you click the extension button.
+            The other option will be available in the context menu.
+        </div>
     </div>
 
     <button id="save" data-i18n="saveButton">Save</button>

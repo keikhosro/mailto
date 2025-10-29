@@ -42,5 +42,17 @@
   },
   "invalidEmails": {
     "message": "Geçersiz e-posta adresi:"
+  },
+  "defaultCCLabel": {
+    "message": "Bilgi (isteğe bağlı):"
+  },
+  "defaultBCCLabel": {
+    "message": "Gizli (isteğe bağlı):"
+  },
+  "defaultSubjectLabel": {
+    "message": "Varsayılan Konu (isteğe bağlı):"
+  },
+  "defaultBodyLabel": {
+    "message": "Varsayılan İçerik (isteğe bağlı):"
   }
 }

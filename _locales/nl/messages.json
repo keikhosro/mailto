@@ -42,5 +42,17 @@
   },
   "invalidEmails": {
     "message": "Ongeldig(e) e-mailadres(sen):"
+  },
+  "defaultCCLabel": {
+    "message": "CC (optioneel):"
+  },
+  "defaultBCCLabel": {
+    "message": "BCC (optioneel):"
+  },
+  "defaultSubjectLabel": {
+    "message": "Standaard Onderwerp (optioneel):"
+  },
+  "defaultBodyLabel": {
+    "message": "Standaard Bericht (optioneel):"
   }
 }

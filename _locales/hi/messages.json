@@ -42,5 +42,17 @@
   },
   "invalidEmails": {
     "message": "अमान्य ईमेल पता:"
+  },
+  "defaultCCLabel": {
+    "message": "CC (वैकल्पिक):"
+  },
+  "defaultBCCLabel": {
+    "message": "BCC (वैकल्पिक):"
+  },
+  "defaultSubjectLabel": {
+    "message": "डिफ़ॉल्ट विषय (वैकल्पिक):"
+  },
+  "defaultBodyLabel": {
+    "message": "डिफ़ॉल्ट संदेश (वैकल्पिक):"
   }
 }

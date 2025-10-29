@@ -42,5 +42,17 @@
   },
   "invalidEmails": {
     "message": "유효하지 않은 이메일 주소:"
+  },
+  "defaultCCLabel": {
+    "message": "참조 (선택사항):"
+  },
+  "defaultBCCLabel": {
+    "message": "숨은 참조 (선택사항):"
+  },
+  "defaultSubjectLabel": {
+    "message": "기본 제목 (선택사항):"
+  },
+  "defaultBodyLabel": {
+    "message": "기본 본문 (선택사항):"
   }
 }

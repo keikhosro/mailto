@@ -42,5 +42,17 @@
   },
   "invalidEmails": {
     "message": "ที่อยู่อีเมลไม่ถูกต้อง:"
+  },
+  "defaultCCLabel": {
+    "message": "สำเนา (ไม่บังคับ):"
+  },
+  "defaultBCCLabel": {
+    "message": "สำเนาลับ (ไม่บังคับ):"
+  },
+  "defaultSubjectLabel": {
+    "message": "หัวข้อเริ่มต้น (ไม่บังคับ):"
+  },
+  "defaultBodyLabel": {
+    "message": "เนื้อหาเริ่มต้น (ไม่บังคับ):"
   }
 }

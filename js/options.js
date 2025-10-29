@@ -15,8 +15,12 @@ function initializeI18n() {
 
 // Load saved settings
 function loadSettings() {
-    chrome.storage.sync.get(['defaultEmails', 'defaultBehavior'], function (result) {
+    chrome.storage.sync.get(['defaultEmails', 'defaultCC', 'defaultBCC', 'defaultSubject', 'defaultBody', 'defaultBehavior'], function (result) {
         document.getElementById('defaultEmails').value = result.defaultEmails || '';
+        document.getElementById('defaultCC').value = result.defaultCC || '';
+        document.getElementById('defaultBCC').value = result.defaultBCC || '';
+        document.getElementById('defaultSubject').value = result.defaultSubject || '';
+        document.getElementById('defaultBody').value = result.defaultBody || '';
         document.getElementById('defaultBehavior').value = result.defaultBehavior || 'blank';
     });
 }
@@ -27,41 +31,76 @@ function isValidEmail(email) {
     return emailRegex.test(email.trim());
 }
 
+// Validate email list
+function validateEmailList(emailString) {
+    if (!emailString || emailString.trim().length === 0) {
+        return {valid: true, invalidEmails: []};
+    }
+
+    const emails = emailString.split(',').map(email => email.trim());
+    const invalidEmails = emails.filter(email => email && !isValidEmail(email));
+
+    return {
+        valid: invalidEmails.length === 0,
+        invalidEmails: invalidEmails
+    };
+}
+
+// Insert token into a text field at cursor position
+function insertToken(fieldId, token) {
+    const field = document.getElementById(fieldId);
+    const startPos = field.selectionStart;
+    const endPos = field.selectionEnd;
+    const text = field.value;
+
+    field.value = text.substring(0, startPos) + token + text.substring(endPos);
+
+    // Set cursor position after the inserted token
+    const newPos = startPos + token.length;
+    field.setSelectionRange(newPos, newPos);
+    field.focus();
+}
+
 // Save settings
 function saveSettings() {
     const defaultEmails = document.getElementById('defaultEmails').value.trim();
+    const defaultCC = document.getElementById('defaultCC').value.trim();
+    const defaultBCC = document.getElementById('defaultBCC').value.trim();
+    const defaultSubject = document.getElementById('defaultSubject').value.trim();
+    const defaultBody = document.getElementById('defaultBody').value.trim();
     const status = document.getElementById('status');
 
-    // If empty, save and return
-    if (defaultEmails.length === 0) {
-        const defaultBehavior = document.getElementById('defaultBehavior').value;
-        chrome.storage.sync.set({
-            defaultEmails: '',
-            defaultBehavior: defaultBehavior
-        }, function () {
-            status.textContent = chrome.i18n.getMessage('settingsSaved');
-            status.style.color = '#4CAF50';
-            setTimeout(function () {
-                status.textContent = '';
-            }, 2000);
-        });
-        return;
-    }
+    // Validate all email fields
+    const toValidation = validateEmailList(defaultEmails);
+    const ccValidation = validateEmailList(defaultCC);
+    const bccValidation = validateEmailList(defaultBCC);
 
-    // Validate email addresses
-    const emails = defaultEmails.split(',').map(email => email.trim());
-    const invalidEmails = emails.filter(email => email && !isValidEmail(email));
+    const allInvalidEmails = [
+        ...toValidation.invalidEmails,
+        ...ccValidation.invalidEmails,
+        ...bccValidation.invalidEmails
+    ];
 
-    if (invalidEmails.length > 0) {
-        status.textContent = `${chrome.i18n.getMessage('invalidEmails')} ${invalidEmails.join(', ')}`;
+    if (allInvalidEmails.length > 0) {
+        status.textContent = `${chrome.i18n.getMessage('invalidEmails')} ${allInvalidEmails.join(', ')}`;
         status.style.color = '#f44336';
         return;
     }
 
-    // Save valid emails
+    // Format email lists
+    const formatEmailList = (emailString) => {
+        if (!emailString) return '';
+        return emailString.split(',').map(email => email.trim()).join(', ');
+    };
+
+    // Save all settings
     const defaultBehavior = document.getElementById('defaultBehavior').value;
     chrome.storage.sync.set({
-        defaultEmails: emails.join(', '),
+        defaultEmails: formatEmailList(defaultEmails),
+        defaultCC: formatEmailList(defaultCC),
+        defaultBCC: formatEmailList(defaultBCC),
+        defaultSubject: defaultSubject,
+        defaultBody: defaultBody,
         defaultBehavior: defaultBehavior
     }, function () {
         // Update context menus when settings change
@@ -79,7 +118,26 @@ function saveSettings() {
 document.addEventListener('DOMContentLoaded', function () {
     initializeI18n();
     loadSettings();
+
+    // Token insertion buttons for Subject
+    document.getElementById('insertTitleSubject').addEventListener('click', function () {
+        insertToken('defaultSubject', '{PAGE_TITLE}');
+    });
+
+    document.getElementById('insertUrlSubject').addEventListener('click', function () {
+        insertToken('defaultSubject', '{PAGE_URL}');
+    });
+
+    // Token insertion buttons for Body
+    document.getElementById('insertTitleBody').addEventListener('click', function () {
+        insertToken('defaultBody', '{PAGE_TITLE}');
+    });
+
+    document.getElementById('insertUrlBody').addEventListener('click', function () {
+        insertToken('defaultBody', '{PAGE_URL}');
+    });
 });
+
 document.getElementById('save').addEventListener('click', saveSettings);
 document.getElementById('closeButton').addEventListener('click', function () {
     window.close();

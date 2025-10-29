@@ -42,5 +42,17 @@
   },
   "invalidEmails": {
     "message": "Ogiltig(a) e-postadress(er):"
+  },
+  "defaultCCLabel": {
+    "message": "Kopia (valfritt):"
+  },
+  "defaultBCCLabel": {
+    "message": "Dold kopia (valfritt):"
+  },
+  "defaultSubjectLabel": {
+    "message": "Standardämne (valfritt):"
+  },
+  "defaultBodyLabel": {
+    "message": "Standardmeddelande (valfritt):"
   }
 }

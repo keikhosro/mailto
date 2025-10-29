@@ -42,5 +42,17 @@
   },
   "invalidEmails": {
     "message": "عنوان (عناوين) بريد إلكتروني غير صالح:"
+  },
+  "defaultCCLabel": {
+    "message": "نسخة كربونية (اختياري):"
+  },
+  "defaultBCCLabel": {
+    "message": "نسخة كربونية مخفية (اختياري):"
+  },
+  "defaultSubjectLabel": {
+    "message": "الموضوع الافتراضي (اختياري):"
+  },
+  "defaultBodyLabel": {
+    "message": "النص الافتراضي (اختياري):"
   }
 }

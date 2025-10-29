@@ -42,5 +42,17 @@
   },
   "invalidEmails": {
     "message": "Nieprawidłowy adres(y) e-mail:"
+  },
+  "defaultCCLabel": {
+    "message": "DW (opcjonalnie):"
+  },
+  "defaultBCCLabel": {
+    "message": "UDW (opcjonalnie):"
+  },
+  "defaultSubjectLabel": {
+    "message": "Domyślny Temat (opcjonalnie):"
+  },
+  "defaultBodyLabel": {
+    "message": "Domyślna Treść (opcjonalnie):"
   }
 }

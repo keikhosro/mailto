@@ -42,5 +42,17 @@
   },
   "invalidEmails": {
     "message": "Endereço(s) de email inválido(s):"
+  },
+  "defaultCCLabel": {
+    "message": "CC (opcional):"
+  },
+  "defaultBCCLabel": {
+    "message": "CCO (opcional):"
+  },
+  "defaultSubjectLabel": {
+    "message": "Assunto Padrão (opcional):"
+  },
+  "defaultBodyLabel": {
+    "message": "Corpo Padrão (opcional):"
   }
 }
